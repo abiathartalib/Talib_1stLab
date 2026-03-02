@@ -55,16 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title><?php echo $isEdit ? 'Edit Student' : 'Add Student'; ?></title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { margin-bottom: 10px; }
-        form { max-width: 400px; }
-        label { display: block; margin-top: 10px; }
-        input[type="text"], input[type="email"] { width: 100%; padding: 8px; box-sizing: border-box; }
-        .buttons { margin-top: 15px; }
-        .buttons input, .buttons a { padding: 8px 16px; margin-right: 10px; }
-        .error { color: red; margin-bottom: 10px; }
-    </style>
+    <link rel="stylesheet" href="assets/css/student_form.css">
 </head>
 <body>
     <h1><?php echo $isEdit ? 'Edit Student Record' : 'Add Student Record'; ?></h1>
